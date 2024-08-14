@@ -25,25 +25,13 @@
                     span {
                         font-size: 22px;
                         color: white;
-                        background-color: rgba(0,0,0,.2);
+                        background-color: rgba(62, 154, 204, 0.98);
                         height: 100%;
                         width: 20%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                     }
-                }
-                &--facebook {
-                    background: #3b5998;
-                }
-                &--youtube {
-                   background: red;
-                }
-                &--github {
-                    background: #262626;
-                }
-                &--websites {
-                    background: #6fcf97;
                 }
             }
         }
