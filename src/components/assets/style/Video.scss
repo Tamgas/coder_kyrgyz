@@ -3,68 +3,70 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    
     button {
       padding: 16px 40px;
       background: #6fcf97;
       color: #fff;
       border: none;
       outline: none;
-      
     }
   }
 
   .text {
-  
     h1 {
-        color: #a7b0c2;
-        font-size: 24px;
-        letter-spacing: .03em;
-        font-weight: 700;
-        padding: 20px 60px;
+      color: #a7b0c2;
+      font-size: 24px;
+      letter-spacing: .03em;
+      font-weight: 700;
+      padding: 20px 60px;
     }
   }
-  .video {
+  .video-card{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-
-    &--img1 {
-      position: relative;
-
-      img {
-        width: 575px;
-        height: 350px;
-        opacity: 0.9;
-        filter: blur(3px);
-      }
-      &__text1 {
-        display: flex;
-        align-items: center;
-        justify-content: cenetr;
-        flex-direction: column;
-        position: absolute;
-
-        top: 30px;
-        left: 25px;
-        color: rgb(241, 237, 237);
-
-        
-        &--par {
+    flex-wrap: wrap;
+    
+    // flex-wrap: wrap;
+    .video {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // flex-wrap: wrap;
+      // gap: 30px;
+  
+      &--img1 {
+        position: relative;
+  
+        img {
+          // width: 575px;
+          height: 350px;
+          opacity: 0.9;
+          filter: blur(3px);
+        }
+  
+        &__text1 {
           display: flex;
-          gap: 25px;
-          padding-top: 20px;
-          padding-left: 10px;
-          &__kor {
-            h6 {
-              font-size: 16px;
-            }
-          }
-
-          &__kor2 {
-            h6 {
-              font-size: 16px;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 25px;
+          color: rgb(241, 237, 237);
+  
+          &--par {
+            display: flex;
+            gap: 25px;
+            position: absolute;
+            top: 185px;
+            left: 10px;
+  
+            &__kor,
+            &__kor2 {
+              h6 {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -72,4 +74,5 @@
     }
   }
 
+ 
 }
