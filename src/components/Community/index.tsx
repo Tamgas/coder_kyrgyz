@@ -1,29 +1,72 @@
-import CommunityList from  './CommList';
-import useFetch from "../../hooks/useFetch";
-
-import loading1 from "../../components/assets/img/loiding.svg";
-import { CONSTANTS } from '../../constants/intex';
+import React from "react";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Community = () => {
-  const { data, loading } = useFetch({ url: `${CONSTANTS}/community` }); 
-
-  if (loading) {
-    return <div className='loading'style={{
-      display:'flex',alignItems:'center',justifyContent:"center"
-  }}><img src={loading1} alt="img" /></div>;
-  }
-
   return (
     <div id="community">
       <div className="container">
+        <div className="community">Community</div>
         <div className="community">
-          <CommunityList data={data}/>
+          <div className="community--telegram">
+            <h1>Наши ресурсы в Telegram</h1>
+            <div className="community--telegram__blocks">
+              <div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>QA</p>
+              </div><div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Motion KG</p>
+              </div><div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Frontend developer</p>
+              </div><div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Codding/PM</p>
+              </div><div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Relocate & Remote</p>
+              </div>
+              <div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>DevOps</p>
+              </div>
+              <div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Mad devs</p>
+              </div>
+              <div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>React Native KG</p>
+              </div>
+              <div className="community--telegram__blocks--block">
+                <span>
+                  <FaTelegramPlane />
+                </span>
+                <p>Кружок програмистов</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+   // </div>  
   );
 };
 
 export default Community;
-
-
